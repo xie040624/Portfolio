@@ -279,10 +279,13 @@
             </div>
             <div class="profile-name">
                 <h1>Xieyi</h1>
-                <p class="profile-handle">@xie040624</p>
+                <p class="profile-handle">Software Engineer / Product Engineer</p>
+                <p style="font-size: 0.9rem; margin-top: 10px; line-height: 1.4; opacity: 0.9;">
+                    Passionate about building scalable applications and user-centric products.
+                </p>
             </div>
 
-            <div class="profile-info">
+            <div class="profile-info" style="margin-top: 30px;">
                 <ul>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -290,7 +293,7 @@
                                 d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z">
                             </path>
                         </svg>
-                        ICT Student
+                        ICT Student @ Mahidol University
                     </div>
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -314,7 +317,7 @@
                                 d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z">
                             </path>
                         </svg>
-                        ENG <sub>B1</sub> / TH <sub>Native</sub> / CN <sub>HSK1</sub>
+                        ENG (B1) / TH (Native) / CN (HSK1)
                     </div>
                 </ul>
             </div>
@@ -323,7 +326,7 @@
         <main class="main-content">
 
             <nav>
-                <div class="button active">
+                <div class="button active" onclick="switchTab(event, 'feed')">
                     <div>
                         FEED
                         <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
@@ -333,7 +336,7 @@
                             </svg></i>
                     </div>
                 </div>
-                <div class="button">
+                <div class="button" onclick="switchTab(event, 'code')">
                     <div>
                         CODE
                         <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
@@ -343,7 +346,7 @@
                             </svg></i>
                     </div>
                 </div>
-                <div class="button">
+                <div class="button" onclick="switchTab(event, 'resume')">
                     <div>
                         RESUME
                         <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="12" height="12">
@@ -355,25 +358,157 @@
                 </div>
             </nav>
 
-            <article class="post-card">
-                <header class="post-header">
-                    <span>PROJECT 01</span>
-                    <time>2025-11-21</time>
-                </header>
-                <div class="post-body">
-                    <img src="./assets/images/dokmai4u.png" class="project-image" alt="Project Screenshot">
-                    <h2 class="post-title">dokmai4u - Online Flower Shop</h2>
-                    <p class="post-desc">
-                        Web application for ordering flowers online. Built with HTML, CSS, and JavaScript to provide a
-                        seamless shopping experience.
-                    </p>
-                </div>
-            </article>
+            <div id="feed-tab" class="tab-content">
+                <article class="post-card">
+                    <header class="post-header">
+                        <span>TECH STACK</span>
+                        <span>SKILLS</span>
+                    </header>
+                    <div class="post-body">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                            <div>
+                                <h3 style="font-family: var(--font-main); font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid var(--black);">Frontend & Mobile</h3>
+                                <ul style="list-style: none; font-size: 0.9rem; line-height: 1.6;">
+                                    <li>■ Flutter & Dart</li>
+                                    <li>■ HTML5 / CSS3 / JavaScript</li>
+                                    <li>■ Responsive Web Design</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 style="font-family: var(--font-main); font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid var(--black);">Backend & Tools</h3>
+                                <ul style="list-style: none; font-size: 0.9rem; line-height: 1.6;">
+                                    <li>■ Supabase (Auth, DB)</li>
+                                    <li>■ Git & GitHub</li>
+                                    <li>■ RESTful API Integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <header class="post-header">
+                        <span>PROJECT 01</span>
+                        <time>2026-03-15</time>
+                    </header>
+                    <div class="post-body">
+                        <div class="project-image" style="display: flex; align-items: center; justify-content: center; background: #222; color: #fff; font-family: var(--font-main); border: 2px solid var(--black);">
+                            <span style="font-size: 1.5rem; letter-spacing: 5px;">REWEAR</span>
+                        </div>
+                        <h2 class="post-title">Rewear - Sustainable Fashion Marketplace</h2>
+                        <p class="post-desc">
+                            A cross-platform mobile application facilitating a second-hand clothing marketplace. Focused on sustainability and user-centric design.
+                        </p>
+                        <div style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="border: 1px solid var(--black); padding: 2px 10px; font-size: 0.75rem; font-family: var(--font-main);">FLUTTER</span>
+                            <span style="border: 1px solid var(--black); padding: 2px 10px; font-size: 0.75rem; font-family: var(--font-main);">SUPABASE</span>
+                            <span style="border: 1px solid var(--black); padding: 2px 10px; font-size: 0.75rem; font-family: var(--font-main);">GOOGLE AUTH</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <header class="post-header">
+                        <span>PROJECT 02</span>
+                        <time>2025-11-21</time>
+                    </header>
+                    <div class="post-body">
+                        <img src="./assets/images/dokmai4u.png" class="project-image" alt="Project Screenshot">
+                        <h2 class="post-title">dokmai4u - Online Flower Shop</h2>
+                        <p class="post-desc">
+                            Responsive web application for a seamless flower ordering experience. Optimized for performance and cross-device compatibility.
+                        </p>
+                        <div style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px;">
+                            <span style="border: 1px solid var(--black); padding: 2px 10px; font-size: 0.75rem; font-family: var(--font-main);">HTML/CSS</span>
+                            <span style="border: 1px solid var(--black); padding: 2px 10px; font-size: 0.75rem; font-family: var(--font-main);">JAVASCRIPT</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div id="code-tab" class="tab-content" style="display: none;">
+                <article class="post-card">
+                    <header class="post-header">
+                        <span>GITHUB</span>
+                        <span>REPOSITORIES</span>
+                    </header>
+                    <div class="post-body">
+                        <p class="post-desc" style="margin-bottom: 20px;">Explore my source code and contributions on GitHub.</p>
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <a href="https://github.com/xie040624/RewearApplication" style="text-decoration: none; color: inherit;">
+                                <div style="border: 1px solid var(--black); padding: 15px; background: rgba(0,0,0,0.05);">
+                                    <h3 style="font-family: var(--font-main); font-size: 1.1rem; margin-bottom: 5px;">RewearApplication</h3>
+                                    <p style="font-size: 0.85rem; opacity: 0.8;">Marketplace application for sustainable fashion.</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/xie040624/dokmai4u" style="text-decoration: none; color: inherit;">
+                                <div style="border: 1px solid var(--black); padding: 15px; background: rgba(0,0,0,0.05);">
+                                    <h3 style="font-family: var(--font-main); font-size: 1.1rem; margin-bottom: 5px;">dokmai4u</h3>
+                                    <p style="font-size: 0.85rem; opacity: 0.8;">Online flower shop web application.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div id="resume-tab" class="tab-content" style="display: none;">
+                <article class="post-card">
+                    <header class="post-header">
+                        <span>RESUME</span>
+                        <span>PROFILE</span>
+                    </header>
+                    <div class="post-body">
+                        <section style="margin-bottom: 25px;">
+                            <h3 style="font-family: var(--font-main); font-size: 1.2rem; border-bottom: 2px solid var(--black); margin-bottom: 10px;">Education</h3>
+                            <div style="margin-bottom: 15px;">
+                                <strong style="display: block;">B.Sc. in Information and Communication Technology</strong>
+                                <span style="font-size: 0.9rem; opacity: 0.8;">Mahidol University | 2022 - Present</span>
+                            </div>
+                        </section>
+                        <section style="margin-bottom: 25px;">
+                            <h3 style="font-family: var(--font-main); font-size: 1.2rem; border-bottom: 2px solid var(--black); margin-bottom: 10px;">Experience</h3>
+                            <div style="margin-bottom: 15px;">
+                                <strong style="display: block;">Project Lead & Developer</strong>
+                                <span style="font-size: 0.9rem; opacity: 0.8;">Rewear Project | 2024</span>
+                                <p style="font-size: 0.85rem; margin-top: 5px; line-height: 1.4;">
+                                    Designed and developed a full-stack mobile application using Flutter and Supabase. Managed product lifecycle from ideation to implementation.
+                                </p>
+                            </div>
+                        </section>
+                        <section>
+                            <h3 style="font-family: var(--font-main); font-size: 1.2rem; border-bottom: 2px solid var(--black); margin-bottom: 10px;">Contact</h3>
+                            <p style="font-size: 0.9rem; line-height: 1.6;">
+                                <strong>Email:</strong> xieyi.dev@example.com<br>
+                                <strong>LinkedIn:</strong> linkedin.com/in/xieyi<br>
+                                <strong>GitHub:</strong> github.com/xie040624
+                            </p>
+                        </section>
+                    </div>
+                </article>
+            </div>
+
 
         </main>
     </div>
 
     <script>
+        // Tab switching logic
+        function switchTab(event, tabId) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.style.display = 'none';
+            });
+            // Show the selected tab content
+            document.getElementById(tabId + '-tab').style.display = 'block';
+
+            // Update active button state
+            document.querySelectorAll('nav .button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+
         // Script อัปเดตเวลา (แก้บั๊กไม่ให้ลบไอคอน)
         function updateTime() {
             const now = new Date();
